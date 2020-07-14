@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <base href="https://www.beta-labs.in" /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperlink Basics</title>
+  </head>
+  <body>
+    <h1 title="Heading of the Document">Hyperlink Basics</h1>
+    <a
+      title="Wikipedia Document"
+      href="https://en.wikipedia.org/wiki/HTML"
+      target="_blank"
+      >Introduction to HTML</a
+    >
+    <br /><br />
+    <!-- Add Event in our anchor element -->
+
+    <a href="https://beta-labs.in" target="_self" onmouseover="hello()"
+      >My Website</a
+    >
+    <br /><br />
+    <a href="hyperlink-2.html" target="_blank">My Application Page-2</a>
+
+    <script>
+      function hello() {
+        alert('Hello h r u...?');
+      }
+    </script>
+
+    <!-- Types of Hyperlinking
+    1. External Hyperlinking : Own App - - > other App
+    2. Internal Hyperlinking: Own App Page - - > Own App other Page -->
+
+    <!-- What is Path: Address of Reference Document
+    1. Absolute Path: COmplete address of reference doc
+    2. Relative Path: In-complete address of reference doc -->
+
+    <br /><br />
+    <a href="/p/html.html">My Blog</a>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+body {
+  background-color: lightgrey;
+}
+h1 {
+  color: red;
+  background-color: lightblue;
+}
+
+/* CSS priorties  */
+/* inline CSS > Internal CSS > External CSS */

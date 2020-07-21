@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+}
+p {
+  border: 2px solid grey;
+  padding: 10px;
+}
+h2 {
+  color: gold;
+}
+h1 {
+  background-color: black;
+  color: white;
+}

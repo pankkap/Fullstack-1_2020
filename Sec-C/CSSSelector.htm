@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+
+    <style>
+        p[lang]
+        {
+            text-shadow: 2px 2px 5px blue;
+        }
+      /* 1. type selector */
+      p {
+        color: red;
+      }
+      /* 2. Universal Selector */
+
+      * {
+        font-size: 20px;
+      }
+      /* 3. Descendant Selector */
+      div p {
+        /* background-color: yellow; */
+      }
+      /* 4. Id Selector */
+      #para2,
+      #para4 {
+        background-color: aqua;
+      }
+      /* 5. class selector */
+      .my-div
+      {
+          border: 5px solid grey;
+          padding: 20px;
+          margin-bottom:10px ;
+      }
+      .my-div1
+      {
+          background-color: lightgray;
+      }
+
+      .my-div b {
+            text-decoration: underline;
+      }
+      div>p
+      {
+          font-family: 'Courier New', Courier, monospace;
+      }
+
+    </style>
+  </head>
+  <body>
+    <a href="#">My Achor Tag</a>
+    <div class="my-div">
+      <h1 class="my-div">This is Heading 1</h1>
+      <h2>This is Heading 2</h2>
+      <p id="para1">
+          <b>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum
+        magnam earum error qui voluptatibus maxime quo tenetur provident, saepe
+        alias unde id incidunt labore voluptatem minus ducimus asperiores
+        voluptatum veritatis commodi illum, nemo est velit cum. Amet quia
+        similique vel quisquam sed quam provident facere, nostrum recusandae
+        voluptatibus non!</b>
+      </p>
+    </div>
+    <div class="my-div">
+      <h1>This is Heading 1</h1>
+      <h2>This is Heading 2</h2>
+      <blockquote>
+      <p id="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum
+        magnam earum error qui voluptatibus maxime quo tenetur provident, saepe
+        alias unde id incidunt labore voluptatem minus ducimus asperiores
+        voluptatum veritatis commodi illum, nemo est velit cum. Amet quia
+        similique vel quisquam sed quam provident facere, nostrum recusandae
+        voluptatibus non!
+      </p>
+    </blockquote>
+    </div class="my-div">
+    <div class="my-div1">
+      <h1>This is Heading 1</h1>
+      <h2>This is Heading 2</h2>
+      <p id="para3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum
+        magnam earum error qui voluptatibus maxime quo tenetur provident, saepe
+        alias unde id incidunt labore voluptatem minus ducimus asperiores
+        voluptatum veritatis commodi illum, nemo est velit cum. Amet quia
+        similique vel quisquam sed quam provident facere, nostrum recusandae
+        voluptatibus non!
+      </p>
+    </div>
+
+    <p id="para4">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, quo
+      reprehenderit. Odit sunt at ullam architecto fuga sint possimus
+      voluptates? Dolor quaerat, animi molestiae facere mollitia perferendis hic
+      minus dolorem, repellendus sequi praesentium quo magni vitae quod
+      temporibus nostrum accusamus est! Nesciunt repellat deserunt natus sed
+      eveniet! Illum molestiae suscipit non dolore minus qui vero facere ipsa
+      recusandae, quia laboriosam inventore, obcaecati dolor eligendi, delectus
+      neque assumenda veniam velit dicta quibusdam alias. Accusamus minima cum
+      dicta, numquam illum quaerat debitis magni. Atque ut accusamus, dolor
+      deleniti ab sunt, magni ipsum velit illo, quas ipsam! Quo id repellendus
+      modi corporis expedita?
+    </p>
+    <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, corporis!</p>
+    <p lang="fr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, corporis!</p>
+  </body>
+</html>

@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Map</title>
+    <style>
+      area {
+        border: 3px solid #fff;
+      }
+      map {
+        background: #fff;
+      }
+    </style>
   </head>
   <body>
-    <!-- In image map image coordinates in Pixel only -->
     <img
       src="img/bootstrap.png"
       alt=""
@@ -20,9 +27,15 @@
         shape="poly"
         coords="245,10, 461,137, 460,260, 250,390, 35, 245, 36, 130,"
         href="https://beta-labs.in"
-        alt="My Website"
+        alt="test2"
         target="_blank"
+        style="filter: alpha(opacity=40);"
       />
     </map>
+    <script>
+      $('map area').on('click', function () {
+        $('area[alt="test2"]').css('opacity', '0.1');
+      });
+    </script>
   </body>
 </html>

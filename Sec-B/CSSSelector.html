@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        background-color: goldenrod;
+      } */
+      /* p b {
+        background-color: yellow;
+      } */
+
+      /* h2,
+      p,
+      h1 {
+        background-color: aqua;
+      } */
+
+      /* Access class selector */
+
+      h2.sec-d {
+        background-color: aqua;
+      }
+
+      .sec-d b {
+        color: red;
+      }
+      #bold1 {
+        background-color: bisque;
+      }
+
+      .div2 {
+        background-color: yellow;
+      }
+      .div-1 {
+        /* width: 500px; */
+        text-align: center;
+      }
+
+      /* Access ID selector */
+
+      /* #para1 {
+        color: red;
+      }
+      #para2 {
+        color: blue;
+      } */
+
+      div > p {
+        text-decoration: underline;
+      }
+      /* Child Selector
+    div > p child      All p that is child of div
+    div p   Descendant ALl p in the div */
+      p[lang~='fr'] {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-1 div2">
+      <h1>This is a Heading 1</h1>
+      <h2 class="sec-d">This is another Heading</h2>
+
+      <p id="para1" class="sec-d">
+        <b id="bold1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+          dolor, tenetur delectus qui amet perferendis nesciunt similique illo,
+          voluptates atque adipisci, error saepe. Rerum aliquid quae, ullam
+          reprehenderit non deleniti perspiciatis. Voluptas in fuga facere harum
+          sit reiciendis! Porro esse omnis at repudiandae corrupti facere
+          tenetur asperiores vero hic laudantium.
+        </b>
+      </p>
+    </div>
+    <div class="div-1 div2">
+      <h1>This is a Heading 1</h1>
+      <h2>This is another Heading</h2>
+      <blockquote>
+        <p id="para2" class="sec-d">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+          dolor, tenetur delectus qui amet perferendis nesciunt similique illo,
+          voluptates atque adipisci, error saepe. Rerum aliquid quae, ullam
+          reprehenderit non deleniti perspiciatis. Voluptas in fuga facere harum
+          sit reiciendis! Porro esse omnis at repudiandae corrupti facere
+          tenetur asperiores vero hic laudantium.
+        </p>
+      </blockquote>
+    </div>
+    <div class="div-1 div2">
+      <h1>This is a Heading 1</h1>
+      <h2>This is another Heading</h2>
+      <p id="para3" class="sec-d">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dolor,
+        tenetur delectus qui amet perferendis nesciunt similique illo,
+        voluptates atque adipisci, error saepe. Rerum aliquid quae, ullam
+        reprehenderit non deleniti perspiciatis. Voluptas in fuga facere harum
+        sit reiciendis! Porro esse omnis at repudiandae corrupti facere tenetur
+        asperiores vero hic laudantium.
+      </p>
+    </div>
+
+    <p lang="en">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio harum
+      maxime blanditiis odit facere quo tempora amet adipisci! Excepturi.
+    </p>
+    <p lang="abc fr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio harum
+      maxime blanditiis odit facere quo tempora amet adipisci! Excepturi.
+    </p>
+  </body>
+</html>

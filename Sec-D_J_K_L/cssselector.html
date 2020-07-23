@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+    <!-- Internal CSS using Style tag in Head Section -->
+    <style>
+      /* 1. Type Selector */
+      p {
+        color: red;
+      }
+      h2 {
+        color: blue;
+      }
+
+      /* 2. Universal Selector */
+      /* * {
+        font-size: 20px;
+      } */
+
+      /* 3. Descendant Selector */
+      div p {
+        background-color: aqua;
+      }
+
+      /* 4. child selector */
+      div > p {
+        background-color: orange;
+      }
+
+      /* 5. ID Selector */
+      #para4 {
+        text-decoration: underline;
+      }
+      #head1 {
+        background-color: black;
+        color: white;
+      }
+      /* 6. class Selector */
+      .class1 {
+        background-color: lightgrey;
+        text-align: center;
+      }
+      .class2 {
+        background-color: lightblue;
+        text-align: right;
+      }
+      /* 7. Attribute Selector */
+      p[lang='fr'] {
+        text-shadow: 2px 2px 5px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class1">
+      <h3>This is 3rd Heading</h3>
+      <h1>This is Heading-1</h1>
+      <h2>This is Heading-2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        incidunt neque beatae aut eveniet excepturi necessitatibus corporis at
+        repellat quas vitae laudantium, reprehenderit non libero ab nihil amet
+        magni aspernatur sint ut. Voluptatum magnam non consequatur officiis
+        velit, id voluptas pariatur cumque repellendus, veniam voluptates fugit
+        eligendi dolores corrupti voluptate.
+      </p>
+    </div>
+    <div>
+      <h1 id="head1">This is Heading-1</h1>
+      <h2>This is Heading-2</h2>
+      <blockquote>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+          incidunt neque beatae aut eveniet excepturi necessitatibus corporis at
+          repellat quas vitae laudantium, reprehenderit non libero ab nihil amet
+          magni aspernatur sint ut. Voluptatum magnam non consequatur officiis
+          velit, id voluptas pariatur cumque repellendus, veniam voluptates
+          fugit eligendi dolores corrupti voluptate.
+        </p>
+      </blockquote>
+    </div>
+    <div class="class2">
+      <h1>This is Heading-1</h1>
+      <h2>This is Heading-2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        incidunt neque beatae aut eveniet excepturi necessitatibus corporis at
+        repellat quas vitae laudantium, reprehenderit non libero ab nihil amet
+        magni aspernatur sint ut. Voluptatum magnam non consequatur officiis
+        velit, id voluptas pariatur cumque repellendus, veniam voluptates fugit
+        eligendi dolores corrupti voluptate.
+      </p>
+    </div>
+    <p id="para4" lang="fr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magnam
+      quasi quod natus hic facere perspiciatis eligendi possimus ipsa cumque,
+      quia fugit quis quas id nihil autem ratione vitae maiores earum, et culpa
+      temporibus repellendus alias numquam. Provident assumenda tenetur enim
+      voluptates facilis cupiditate, magnam obcaecati veniam ullam nulla
+      deleniti!
+    </p>
+    <p lang="en">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      libero minima error cupiditate cumque vero, ad similique id. Libero
+      inventore veniam magni delectus, commodi possimus hic quas error, aperiam
+      corrupti aut a aliquid ad ipsa doloribus voluptatum enim? Quibusdam
+      dolorum corporis nemo! Ipsam, ratione cumque inventore itaque et
+      necessitatibus dolorem?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display property</title>
+    <style>
+      #span2 {
+        display: none;
+        /* visibility: hidden; */
+      }
+      a {
+        margin-top: 10px;
+        padding: 10px;
+        display: block;
+        /* border: 1px solid red; */
+        width: 200px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: red;
+      }
+      a:hover {
+        background-color: yellowgreen;
+      }
+      #span1 {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+      }
+      p {
+        border: 1px solid red;
+      }
+      #para1 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span style="background-color: yellow;"> -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odit
+      dolorum deserunt provident sequi, saepe dicta nemo porro distinctio veniam
+      eaque, quasi quidem numquam asperiores molestias repellendus officiis
+      sapiente veritatis voluptatibus. Sapiente cum magni dicta! Cupiditate
+      facilis sunt cumque similique nostrum quae, dolor molestias fuga
+      voluptatem! Consequatur quia voluptatibus repellendus.
+    </p>
+    <p id="para1">Hello WOrld</p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, officiis
+    voluptates? Nobis sit quod magnam quaerat a, rem maiores porro.
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit iusto
+      sunt illo ducimus laborum ut accusamus a cumque laboriosam, earum officia
+      perferendis, itaque quia modi recusandae explicabo repellendus laudantium
+      blanditiis non, nulla necessitatibus fugit nobis! Enim eum perspiciatis
+      repudiandae est laudantium ea alias iure natus numquam perferendis,
+      deleniti error quaerat.
+    </p>
+    <span id="span2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+      officiis voluptates? Nobis sit quod magnam quaerat a, rem </span
+    ><span id="span1"> maiores porro</span>.
+    <a href="#" onclick="hello()">This is a Link</a>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <script>
+      function hello() {
+        document.getElementById('span2').style.display = 'inline';
+      }
+    </script>
+  </body>
+</html>

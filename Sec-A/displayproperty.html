@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+    <style>
+        #span2
+        {
+            display: none;
+            /* visibility: hidden; */
+        }
+        a
+        {
+            margin: 20px auto;
+            display: block;
+            border: 2px solid orange;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: orange;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover
+        {
+            background-color: greenyellow;
+        }
+        {}
+        #span1
+        {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            margin:20px;
+            padding: 30px;
+            background-color: pink;
+        }
+      p {
+        border: 1px solid red;
+        
+      }
+      #para2 {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <span style="background-color: yellow;"> -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        omnis iste natus maiores officiis nihil fugit itaque reprehenderit
+        magnam? Rerum magni praesentium, at ullam quasi quos mollitia error.
+        Omnis, ab. Aliquid molestiae repudiandae minima dolore blanditiis porro
+        voluptatum voluptate a sunt aliquam fugit, at soluta placeat doloribus
+        quibusdam obcaecati fuga!
+      </p>
+      <p id="para2">Hello World</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non
+      fugiat laboriosam maxime recusandae odit alias id commodi quasi facere!
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        omnis iste natus maiores officiis nihil fugit itaque reprehenderit
+        magnam? Rerum magni praesentium, at ullam quasi quos mollitia error.
+        Omnis, ab. Aliquid molestiae repudiandae minima dolore blanditiis porro
+        voluptatum voluptate a sunt aliquam fugit, at soluta placeat doloribus
+        quibusdam obcaecati fuga!
+      </p>
+      <span id="span2">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non
+      fugiat laboriosam maxime recusandae odit alias id commodi</span> <span id="span1"
+    >quasi facere!</span>
+      <a href="#" onclick="hello()">This is a Link</a>
+      <script>
+          function hello()
+          {
+              document.getElementById("span2").style.display='inline';
+          }
+
+      </script>
+    </span>
+  </body>
+</html>

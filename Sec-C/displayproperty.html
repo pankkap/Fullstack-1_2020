@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Properties</title>
+    <style>
+      #span1 {
+        display: block;
+      }
+
+      #span2 {
+        display: inline-block;
+        text-align: right;
+      }
+      #span2:hover {
+        color: white;
+      }
+      p {
+        display: inline;
+        border: 2px solid red;
+      }
+      h1 {
+        display: inline;
+        border: 1px solid blue;
+      }
+      h2:hover {
+        text-decoration: underline;
+      }
+
+      a {
+        display: block;
+        border: 1px solid grey;
+        font-size: 30px;
+        width: 200px;
+        text-align: center;
+        text-decoration: none;
+        background-color: blanchedalmond;
+        border-radius: 10px;
+      }
+      a:hover {
+        background-color: red;
+      }
+
+      #span3 {
+        /* display: none; */
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam
+    amet facilis ullam temporibus culpa, distinctio maxime dolorem iusto veniam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis
+    veritatis quod consectetur, nesciunt modi repellendus impedit fugiat nostrum
+    ipsum.
+
+    <!-- 
+    1. display:block
+    2. display:inline
+    3. display:inline-block
+    4. display:none
+    5. display:flex
+    6. display:grid 
+     -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum modi
+      nostrum at dolorem illum officiis, commodi provident. Quisquam,
+    </p>
+    <p>Hello Word</p>
+    <h1>This is a heading</h1>
+    <h2>This is another heading</h2>
+    <span id="span1" style="color: red; background-color: yellow;"
+      >Lorem ipsum</span
+    >
+    <span id="span3"
+      >dolor sit amet consectetur, adipisicing elit. Velit blanditiis id modi
+      earum asperiores itaque ullam eum aperiam nemo accusamus.</span
+    >
+    <span
+      id="span2"
+      style="
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        background-color: pink;
+      "
+      >nam eligendi</span
+    >. <br /><br /><br />
+    <a href="#" onclick="hello()">This is a Link</a>
+    <script>
+      function hello() {
+        document.getElementById('span3').style.display = 'inline';
+      }
+    </script>
+  </body>
+</html>

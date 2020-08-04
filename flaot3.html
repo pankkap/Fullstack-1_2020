@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: solid;
+        /* float: left; */
+      }
+      .container::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      #box2 {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        float: left;
+      }
+      #box3 {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        float: left;
+      }
+      #box1 {
+        width: 100px;
+        height: 100px;
+        background-color: yellowgreen;
+        float: left;
+      }
+      #box4 {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <!-- <div id="box4"></div> -->
+    </div>
+  </body>
+</html>

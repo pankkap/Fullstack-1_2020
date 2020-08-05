@@ -3,124 +3,485 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive-Layout</title>
+    <title>Layout-1</title>
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      #container {
-        border: solid;
+      .container {
         width: 1200px;
+        /* border: solid; */
         margin: 0px auto;
         padding: 15px;
       }
 
-      #header {
-        background-color: lightgray;
-        height: 70px;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        color: white;
-        font-size: 40px;
+      /* 
+1. 1201 or ----
+2. 1025 to 1200
+3. 769 to 1024
+4. 481 to 768
+5. 0 to 480 
+*/
+      /* Breakpoint-1 */
 
-        /* center to the div */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      #footer {
-        background-color: rgb(161, 195, 204);
-        height: 70px;
-        /* margin-bottom: 15px; */
-        border-radius: 15px;
-        color: white;
-        font-size: 40px;
-        margin-top: 15px;
-
-        /* center to the div */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #content {
-        /* border: 5px solid red; */
-      }
-
-      #content::after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-
-      /* #dummy
-      {
+      @media (min-width: 1201px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+        }
+        #content:after {
+          content: '';
+          display: block;
           clear: both;
-      } */
+        }
+        #left-side {
+          width: 20%;
 
-      #left-sidebar {
-        width: 20%;
-        height: 515px;
-        /* border: solid blue; */
-        float: left;
+          /* border: solid blue; */
+          float: left;
+        }
+        #right-side {
+          width: 78%;
+          height: 615px;
+          /* border: solid green; */
+          float: right;
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          width: 100%;
+          height: 400px;
+          /* float: left; */
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          width: 100%;
+          height: 200px;
+          /* float: left; */
+          background-color: orangered;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
       }
-      #right-sidebar {
-        width: 78%;
-        height: 515px;
-        /* border: solid green; */
-        float: right;
-        background-color: goldenrod;
-        border-radius: 15px;
-        color: white;
-        font-size: 40px;
 
-        /* center to the div */
+      /* Breakpoint-2 */
+
+      @media (min-width: 1025px) and (max-width: 1200px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+        }
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 20%;
+
+          /* border: solid blue; */
+          float: left;
+
+          /* Rearrange the elements with this code */
+          display: flex;
+          flex-direction: column;
+        }
+        #right-side {
+          width: 78%;
+          height: 615px;
+          /* border: solid green; */
+          float: right;
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 400px;
+          /* float: left; */
+          background-color: blueviolet;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          order: 1;
+          width: 100%;
+          height: 200px;
+          /* float: left; */
+          background-color: orangered;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+      }
+      /* Breakpoint-3 */
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+        }
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 20%;
+
+          /* border: solid blue; */
+          float: left;
+
+          /* Rearrange the elements with this code */
+          display: flex;
+          flex-direction: column;
+        }
+        #right-side {
+          width: 78%;
+          height: 615px;
+          /* border: solid green; */
+          float: right;
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 615px;
+          /* float: left; */
+          background-color: blueviolet;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          display: none;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+      }
+
+      /* Breakpoint-4 */
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+        }
+        #left-side:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 100%;
+          order: 2;
+
+          /* border: solid blue; */
+
+          /* Rearrange the elements with this code */
+          /* display: flex;
+          flex-direction: column; */
+        }
+        #right-side {
+          order: 1;
+          margin-bottom: 15px;
+          width: 100%;
+          height: 615px;
+          /* border: solid green; */
+          /* float: right; */
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 48%;
+          height: 100px;
+          float: right;
+
+          background-color: blueviolet;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          order: 1;
+          width: 50%;
+          height: 100px;
+          float: left;
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+      }
+      /* Breakpoint-5 */
+
+      @media (max-width: 480px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+        }
+        #left-side:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 100%;
+          order: 2;
+
+          /* border: solid blue; */
+
+          /* Rearrange the elements with this code */
+          /* display: flex;
+          flex-direction: column; */
+        }
+        #right-side {
+          order: 1;
+          margin-bottom: 15px;
+          width: 100%;
+          height: 615px;
+          /* border: solid green; */
+          /* float: right; */
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 100px;
+          /* float: right; */
+
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          order: 1;
+          width: 100%;
+          height: 100px;
+          /* float: left; */
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+      }
+      #photoooo {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: pink;
       }
-      #nav {
-        width: 100%;
-        height: 300px;
-        background-color: blueviolet;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        color: white;
-        font-size: 40px;
-
-        /* center to the div */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      #news {
-        width: 100%;
-        height: 200px;
-        background-color: orangered;
-        border-radius: 15px;
-        color: white;
-        font-size: 40px;
-
-        /* center to the div */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      img {
+        width: 30%;
+        border: 2px solid grey;
+        border-radius: 20%;
       }
     </style>
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <div id="header">Header</div>
       <div id="content">
-        <div id="left-sidebar">
+        <div id="left-side">
           <div id="nav">Navigation</div>
           <div id="news">News Updates</div>
         </div>
-        <div id="right-sidebar">Main Content</div>
-        <!-- <div id="dummy"></div> -->
+        <div id="right-side">Main Content</div>
       </div>
       <div id="footer">Footer</div>
+
+      <br />
+      <br />
+      <div id="photoooo"><img src="img/avtars/1.png" alt="" /></div>
     </div>
   </body>
 </html>

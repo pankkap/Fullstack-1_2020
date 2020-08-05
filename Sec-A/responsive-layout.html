@@ -15,95 +15,503 @@
         margin: 0px auto;
         padding: 15px;
       }
-      #header {
-        background-color: lightgray;
-        height: 70px;
-        width: 100%;
-        border-radius: 15px;
 
-        /* content center to the screen */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      /* 
+      1. 1201 or more (Extra Large Screen) LED 
+      2. 1025 t0 1200 (Large Screen) 17 inch
+      3. 789 to 1024 ( mediam large display) Laptop Small moitors
+      4. 481 to 768 ( Mediam devices ) Tablets 
+      5. upto 480  ( Mobile devices) 
+ */
 
-        color: white;
-        font-size: 40px;
-        margin-bottom: 15px;
+      @media (min-width: 1201px) {
+        #header {
+          background-color: lightgray;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+        }
+        #footer {
+          background-color: lightblue;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          /* margin-bottom: 15px; */
+        }
+
+        #content {
+          /* border: 5px solid red; */
+        }
+
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-sidebar {
+          width: 20%;
+          /* border: solid blue; */
+          /* height: 515px; */
+          float: left;
+        }
+        #nav {
+          width: 100%;
+          height: 300px;
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #news {
+          width: 100%;
+          height: 300px;
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #right-sidebar {
+          width: 78%;
+          /* border: solid green; */
+          height: 615px;
+          float: right;
+          background-color: goldenrod;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
       }
-      #footer {
-        background-color: lightblue;
-        height: 70px;
-        width: 100%;
-        border-radius: 15px;
 
-        /* content center to the screen */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      /* Breakpoint: -2 */
 
-        color: white;
-        font-size: 40px;
-        /* margin-bottom: 15px; */
+      @media (min-width: 1025px) and (max-width: 1200px) {
+        #header {
+          background-color: lightgray;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+        }
+        #footer {
+          background-color: lightblue;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          /* margin-bottom: 15px; */
+        }
+
+        #content {
+          /* border: 5px solid red; */
+        }
+
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-sidebar {
+          width: 20%;
+          /* border: solid blue; */
+          /* height: 515px; */
+          float: left;
+
+          /* Code to Reorder the Elements */
+          display: flex;
+          flex-direction: column;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 300px;
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #news {
+          order: 1;
+          width: 100%;
+          height: 300px;
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #right-sidebar {
+          width: 78%;
+          /* border: solid green; */
+          height: 615px;
+          float: right;
+          background-color: goldenrod;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+      }
+      /* Breakpoint: -3 */
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        #header {
+          background-color: lightgray;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+        }
+        #footer {
+          background-color: lightblue;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          /* margin-bottom: 15px; */
+        }
+
+        #content {
+          /* border: 5px solid red; */
+        }
+
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-sidebar {
+          width: 20%;
+          /* border: solid blue; */
+          /* height: 515px; */
+          float: left;
+
+          /* Code to Reorder the Elements */
+          display: flex;
+          flex-direction: column;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 615px;
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #news {
+          display: none;
+        }
+        #right-sidebar {
+          width: 78%;
+          /* border: solid green; */
+          height: 615px;
+          float: right;
+          background-color: goldenrod;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+      }
+      /* Breakpoint: -4 */
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        #header {
+          background-color: lightgray;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+        }
+        #footer {
+          background-color: lightblue;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          /* margin-bottom: 15px; */
+        }
+
+        #content {
+          /* border: 5px solid red; */
+          display: flex;
+          flex-direction: column;
+        }
+
+        #left-sidebar {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-sidebar {
+          width: 100%;
+          order: 2;
+          /* border: solid blue; */
+          /* height: 515px; */
+          /* float: left; */
+
+          /* Code to Reorder the Elements */
+          display: flex;
+          flex-direction: row;
+        }
+        #nav {
+          order: 2;
+          width: 70%;
+          height: 100px;
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          float: left;
+
+          color: white;
+          font-size: 40px;
+          margin-left: 15px;
+          border-radius: 15px;
+        }
+        #news {
+          order: 1;
+          width: 28%;
+          height: 100px;
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          float: right;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #right-sidebar {
+          order: 1;
+          width: 100%;
+          /* border: solid green; */
+          height: 615px;
+          float: right;
+          background-color: goldenrod;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+      }
+      /* Breakpoint: -5 */
+
+      @media (max-width: 480px) {
+        #header {
+          background-color: lightgray;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+        }
+        #footer {
+          background-color: lightblue;
+          height: 70px;
+          width: 100%;
+          border-radius: 15px;
+
+          /* content center to the screen */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          /* margin-bottom: 15px; */
+        }
+
+        #content {
+          /* border: 5px solid red; */
+          display: flex;
+          flex-direction: column;
+        }
+
+        #left-sidebar {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-sidebar {
+          width: 100%;
+          order: 2;
+          /* border: solid blue; */
+          /* height: 515px; */
+          /* float: left; */
+
+          /* Code to Reorder the Elements */
+        }
+        #nav {
+          width: 100%;
+          height: 100px;
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* float: left; */
+
+          color: white;
+          font-size: 40px;
+
+          border-radius: 15px;
+        }
+        #news {
+          order: 1;
+          width: 100%;
+          height: 100px;
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* float: right; */
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
+        #right-sidebar {
+          order: 1;
+          width: 100%;
+          /* border: solid green; */
+          height: 615px;
+          float: right;
+          background-color: goldenrod;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: white;
+          font-size: 40px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+        }
       }
 
-      #content {
-        /* border: 5px solid red; */
-      }
 
-      #content:after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-      #left-sidebar {
-        width: 20%;
-        /* border: solid blue; */
-        /* height: 515px; */
-        float: left;
-      }
-      #nav {
-        width: 100%;
-        height: 600px;
-        background-color: blueviolet;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        color: white;
-        font-size: 40px;
-        margin-bottom: 15px;
-        border-radius: 15px;
-      }
-      #news {
-        width: 100%;
-        height: 300px;
-        background-color: orangered;
-        /* margin-bottom: 15px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: white;
-        font-size: 40px;
-        margin-bottom: 15px;
-        border-radius: 15px;
-      }
-      #right-sidebar {
-        width: 78%;
-        /* border: solid green; */
-        height: 915px;
-        float: right;
-        background-color: goldenrod;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: white;
-        font-size: 40px;
-        margin-bottom: 15px;
-        border-radius: 15px;
-      }
     </style>
   </head>
   <body>

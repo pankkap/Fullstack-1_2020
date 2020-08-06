@@ -11,83 +11,454 @@
         margin: 0px auto;
         padding: 15px;
       }
-      #header {
-        width: 100%;
-        background-color: lightgray;
-        height: 70px;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
-      }
-      #content {
-        /* border: solid red; */
-        margin-bottom: 15px;
-      }
-      #content:after {
-        content: '';
-        display: block;
-        clear: both;
-      }
-      #left-side {
-        width: 20%;
 
-        /* border: solid blue; */
-        float: left;
+      /*
+      Breakpoints
+         min     max
+      1. 1201 to ------ (Extra Large Screens)
+      2. 1025 to 1200    (Large Screen)
+      3. 769 to 1024      (Midiam large Screen)
+      4. 481 to 768       (Tablets Screen)
+      5. uoto 480         (Mobile Screens)
+       */
+
+      /* Breakpoint-1 */
+
+      @media (min-width: 1201px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+        }
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 20%;
+
+          /* border: solid blue; */
+          float: left;
+        }
+        #right-side {
+          width: 78%;
+          height: 615px;
+          /* border: solid green; */
+          float: right;
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          width: 100%;
+          height: 400px;
+          /* float: left; */
+          background-color: blueviolet;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          width: 100%;
+          height: 200px;
+          /* float: left; */
+          background-color: orangered;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
       }
-      #right-side {
-        width: 78%;
-        height: 615px;
-        /* border: solid green; */
-        float: right;
-        background-color: goldenrod;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
+
+      /* Breakpoint-2 */
+
+      @media (min-width: 1025px) and (max-width: 1200px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+        }
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 20%;
+
+          /* border: solid blue; */
+          float: left;
+
+          /* Reorder the elements in the container */
+          display: flex;
+          flex-direction: column;
+        }
+        #right-side {
+          width: 78%;
+          height: 615px;
+          /* border: solid green; */
+          float: right;
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 400px;
+          /* float: left; */
+          background-color: blueviolet;
+
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          order: 1;
+          width: 100%;
+          height: 200px;
+          /* float: left; */
+          background-color: orangered;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
       }
-      #nav {
-        width: 100%;
-        height: 400px;
-        /* float: left; */
-        background-color: blueviolet;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
+
+      /* Breakpoint-3 */
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+        }
+        #content:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          width: 20%;
+
+          /* border: solid blue; */
+          float: left;
+
+          /* Reorder the elements in the container */
+          display: flex;
+          flex-direction: column;
+        }
+        #right-side {
+          width: 78%;
+          height: 615px;
+          /* border: solid green; */
+          float: right;
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 615px;
+          /* float: left; */
+          background-color: blueviolet;
+
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          display: none;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
       }
-      #news {
-        width: 100%;
-        height: 200px;
-        /* float: left; */
-        background-color: orangered;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
+
+      /* Breakpoint-4 */
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+          display: flex;
+          flex-direction: column;
+        }
+        #left-side:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          order: 2;
+          width: 100%;
+          /* border: 2px solid green; */
+
+          /* border: solid blue; */
+
+          /* Reorder the elements in the container */
+          /* display: flex;
+          flex-direction: column; */
+        }
+        #right-side {
+          order: 1;
+          margin-bottom: 15px;
+          width: 100%;
+          height: 615px;
+          /* border: solid green; */
+          /* float: right; */
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 48%;
+          height: 200px;
+          float: right;
+          background-color: blueviolet;
+
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          order: 1;
+          width: 50%;
+          height: 200px;
+          float: left;
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
       }
-      #footer {
-        width: 100%;
-        background-color: lightskyblue;
-        height: 70px;
-        /* margin-bottom: 15px; */
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: white;
+
+      /* Breakpoint-5 */
+
+      @media (max-width: 480px) {
+        #header {
+          width: 100%;
+          background-color: lightgray;
+          height: 70px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #content {
+          /* border: solid red; */
+          margin-bottom: 15px;
+          display: flex;
+          flex-direction: column;
+        }
+        #left-side:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        #left-side {
+          order: 2;
+          width: 100%;
+          /* border: 2px solid green; */
+
+          /* border: solid blue; */
+
+          /* Reorder the elements in the container */
+          /* display: flex;
+          flex-direction: column; */
+        }
+        #right-side {
+          order: 1;
+          margin-bottom: 15px;
+          width: 100%;
+          height: 615px;
+          /* border: solid green; */
+          /* float: right; */
+          background-color: goldenrod;
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #nav {
+          order: 2;
+          width: 100%;
+          height: 200px;
+          /* float: right; */
+          background-color: blueviolet;
+
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #news {
+          order: 1;
+          margin-top: 15px;
+          width: 100%;
+          height: 200px;
+          /* float: left; */
+          background-color: orangered;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
+        #footer {
+          width: 100%;
+          background-color: lightskyblue;
+          height: 70px;
+          /* margin-bottom: 15px; */
+          border-radius: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          color: white;
+        }
       }
     </style>
   </head>
